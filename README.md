@@ -5,3 +5,6 @@
 # MineSweeper:-
     -Developed web-based version of Minesweeper game, using HTML,CSS for structure and styling and Javascript to handle game logic and interactivity.
     -The game dynamically generates a grid of cells,with some contaoning hidden mines.
+# Calculator
+    -This project is a simple calculator web application build using HTML,CSS and JavaScript.
+    -It allows users to perform fundamental arithmetic operations
