@@ -102,27 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    for (let i = 0; i < squares.length; i++) {
-        squares[i].onclick = () => {
-            //console.log("You have clicked square",i);
-            //if the square below your current square is taken, ypu can go ontop of it
-            if (squares[(i + 7)].classList.contains('taken')&&!squares[i].classList.contains('taken')) {
-                if (currentPlayer == 1) {
-                    squares[i].classList.add('taken');
-                    squares[i].classList.add('player-one');
-                    currentPlayer = 2;
-                    displayCurrentPlayer.innerHTML = currentPlayer;
-                }else if(currentPlayer==2){
-                    squares[i].classList.add('taken');
-                    squares[i].classList.add('player-two');
-                    currentPlayer = 1;
-                    displayCurrentPlayer.innerHTML = currentPlayer;
-                }else {alert('Can,t go here');}
-            }
-        }
-        //console.log("game over");
-        //checkBoard();
-    }for (let i = 0; i < squares.length; i++) {
+   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
       //if the square below your current square is taken, you can go ontop of it
       if (squares[i + 7].classList.contains('taken') &&!squares[i].classList.contains('taken')) {
