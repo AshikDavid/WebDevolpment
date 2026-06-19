@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Full-Stack Developer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        .hero {
+            background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&q=80&w=1600') 
+            center/cover no-repeat;
+            height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 100px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+
+        .skill-badge {
+            padding: 10px 14px;
+            font-size: 14px;
+        }
+
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #111;
+            color: #ddd;
+        }
+
+        footer i {
+            font-size: 22px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="hero-overlay">
+            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=400&q=80" 
+                class="profile-img mb-3">
+            <h1 class="fw-bold">Ashik Abraham</h1>
+            <h4 class="text-warning">Full-Stack Developer • CSE Graduate</h4>
+            <p class="mt-2">Building modern web applications using MERN stack.</p>
+            <a href="#projects" class="btn btn-warning mt-3">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="container py-5">
+        <h2 class="text-center fw-bold mb-4">About Me</h2>
+        <p class="lead text-center">
+            I am a Full-Stack Developer passionate about building scalable web applications and learning new
+            technologies.
+            Strong in React, Node, MongoDB, Express and UI design. Currently exploring cloud & DevOps.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Skills</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="btn btn-dark skill-badge">HTML</span>
+                <span class="btn btn-dark skill-badge">CSS</span>
+                <span class="btn btn-dark skill-badge">JavaScript</span>
+                <span class="btn btn-dark skill-badge">React</span>
+                <span class="btn btn-dark skill-badge">Bootstrap</span>
+                <span class="btn btn-dark skill-badge">Node.js</span>
+                <span class="btn btn-dark skill-badge">Express</span>
+                <span class="btn btn-dark skill-badge">MongoDB</span>
+                <span class="btn btn-dark skill-badge">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media Dashboard</h5>
+                        <p class="card-text">React + Firebase analytics dashboard for social engagement.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Web App</h5>
+                        <p class="card-text">MERN stack shop with cart, login & admin panel.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1581091012184-5c7b88479f5d?w=600&q=80"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Portfolio Generator</h5>
+                        <p class="card-text">Custom GPT app that generates CV & portfolio content.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                        <a href="#" class="btn btn-outline-dark btn-sm">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container text-center py-5">
+        <h2 class="fw-bold mb-3">Contact</h2>
+        <p>Email: <strong>yourname@gmail.com</strong></p>
+        <a href="mailto:yourname@gmail.com" class="btn btn-dark">Send Message</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>© 2025 Ashik Abraham</p>
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </footer>
+
+</body>
+
+</html>
